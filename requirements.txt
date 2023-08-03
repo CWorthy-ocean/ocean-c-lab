@@ -1,0 +1,6 @@
+# This file is redundant with setup.cfg;
+numpy
+xarray
+scipy
+dask
+cftime
