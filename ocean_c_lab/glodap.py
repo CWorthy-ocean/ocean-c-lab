@@ -6,7 +6,10 @@ import urllib
 import numpy as np
 import xarray as xr
 
-cache_dir = os.environ['TMPDIR']
+try:
+    cache_dir = os.environ['TMPDIR']
+except:
+    cache_dir = './'
 
 known_products = [
     "GLODAPv2.2016b_MappedClimatologies",
